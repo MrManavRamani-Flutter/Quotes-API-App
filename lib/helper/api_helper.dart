@@ -21,6 +21,7 @@ class APIHelper {
 
       return quotesData
           .map((e) => Quote(
+                id: e['_id'],
                 author: e['author'],
                 content: e['content'],
                 authorSlug: e['authorSlug'],
