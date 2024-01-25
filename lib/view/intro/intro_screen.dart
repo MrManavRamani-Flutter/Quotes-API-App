@@ -20,9 +20,9 @@ class _IntroScreenState extends State<IntroScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text("Quotes API"),
+        child: Image.asset('./assets/img/img.png'),
       ),
     );
   }

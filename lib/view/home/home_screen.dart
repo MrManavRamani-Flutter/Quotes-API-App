@@ -113,11 +113,6 @@ class _HomePageState extends State<HomePage> {
                 leading: const Icon(Icons.favorite_border),
                 title: const Text('Favorite'),
               ),
-              ListTile(
-                leading: const Icon(Icons.settings),
-                title: const Text('Settings'),
-                onTap: () {},
-              ),
             ],
           ),
         ),
