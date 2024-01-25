@@ -11,19 +11,20 @@ https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/b0191fb
 
 
 ## All Screen photos given below
-## 1
+## 1 Welcome Screen
+
 ![WhatsApp Image 2024-01-25 at 18 39 11_ad80895c](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/4c0c5baf-0259-46d4-9956-43eb82dd5b93)
 
-## 2
+## 2 Home Screen 
 ![WhatsApp Image 2024-01-25 at 18 39 12_4782d5e4](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/b5414364-06b7-4229-b312-73fbd96d2f5c)
 
-## 3
+## 3 Home screen in favorite functionality 
 ![WhatsApp Image 2024-01-25 at 18 39 12_72586b80](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/038586dc-8e6c-4a2c-8aa1-93bdf3dbaa5f)
 
-## 4
+## 4 Drawer In favorite page link
 ![WhatsApp Image 2024-01-25 at 18 39 12_9c0fea8f](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/62e82237-1856-41f3-aa68-67e5634bed1a)
 
-## 5
+## 5 favorite Item List Screen 
 ![WhatsApp Image 2024-01-25 at 18 39 13_eb04894c](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/470474ec-84df-4a2d-b26a-920e4f27c80c)
 
 
