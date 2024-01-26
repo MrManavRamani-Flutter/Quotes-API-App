@@ -9,7 +9,7 @@
         <img src="https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/ed15fb3c-3ba9-47b0-ba90-6fabab437eb2" alt="Home Screen" height="350">
       </td>
       <td>
-        <h2>Home Screen with Favorite Functionality</h2>
+        <h2>Favorite Functionality</h2>
         <img src="https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/ed50b599-2799-4bef-bad4-b5b4fe5421b5" alt="Home Screen - Favorite Functionality" height="350" >
       </td>
     </tr>
