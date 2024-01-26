@@ -1,4 +1,4 @@
-  <table border="1">
+  <table>
     <tr>
       <td>
         <h2>Welcome Screen</h2>
@@ -12,22 +12,9 @@
         <h2>Home Screen with Favorite Functionality</h2>
         <img src="https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/ed50b599-2799-4bef-bad4-b5b4fe5421b5" alt="Home Screen - Favorite Functionality" height="350" >
       </td>
-      <td>
-        <h2>Drawer</h2>
-        <img src="https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/c5ecb630-e14d-4175-895e-fa30b4e1e146" alt="Drawer" height="350">
-      </td>
-      <td>
-        <h2>Favorite Screen</h2>
-        <img src="https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/716bfaab-75b5-4b6f-bb56-d2c56cf3d90d" alt="Favorite Screen" height="350">
-      </td>
-      <td>
-        <h2>Favorite Item List Screen</h2>
-        <img src="https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/5094e3e9-797f-4b37-99d7-95555eb05df8" alt="Favorite Item List Screen" height="350">
-      </td>
     </tr>
   </table>
-
-    <table border="1">
+    <table>
     <tr>
       <td>
         <h2>Drawer</h2>
