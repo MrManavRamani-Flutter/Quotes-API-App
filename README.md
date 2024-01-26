@@ -1,4 +1,4 @@
-  <table>
+  <table border="1">
     <tr>
       <td>
         <h2>Welcome Screen</h2>
