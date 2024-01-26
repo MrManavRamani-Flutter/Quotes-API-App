@@ -10,5 +10,3 @@ class Quote {
     required this.authorSlug,
   });
 }
-
-late Set<String> favoriteQuotes;

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:quotes_api_app/provider/quotes_provider.dart';
 import 'package:quotes_api_app/theme.dart';
 import 'package:quotes_api_app/view/home/home_screen.dart';
 import 'package:quotes_api_app/view/intro/intro_screen.dart';
@@ -13,15 +15,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.lightTheme(context),
-      initialRoute: 'welcome',
-      routes: {
-        '/': (context) => const HomePage(),
-        'welcome': (context) => const IntroScreen(),
-        'like_screen': (context) => const FavoriteScreen(),
-      },
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => QuotesProvider(),
+        ),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme.lightTheme(context),
+        initialRoute: 'welcome',
+        routes: {
+          '/': (context) => const HomePage(),
+          'welcome': (context) => const IntroScreen(),
+          'like_screen': (context) => const FavoriteScreen(),
+        },
+      ),
     );
   }
 }

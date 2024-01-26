@@ -1,63 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:quotes_api_app/helper/api_helper.dart';
 import 'package:quotes_api_app/models/quotes_model.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:quotes_api_app/provider/quotes_provider.dart';
+import 'package:quotes_api_app/view/widgets/custom_drawer.dart';
 
-const Color inActiveIconColor = Color(0xFFB6B6B6);
-
-class HomePage extends StatefulWidget {
+class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  void initState() {
-    super.initState();
-    getData();
-    loadFavorites();
-  }
-
-  getData() async {
-    await APIHelper.apiHelper.fetchedQuote().then((value) {
-      setState(() {});
-    });
-  }
-
-  Future<void> loadFavorites() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    setState(() {
-      favoriteQuotes = Set.from(prefs.getStringList('favorites') ?? []);
-    });
-  }
-
-  Future<void> saveFavorites() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    prefs.setStringList('favorites', favoriteQuotes.toList());
-  }
-
-  void addToFavorites(String quoteId) {
-    setState(() {
-      favoriteQuotes.add(quoteId);
-    });
-    saveFavorites();
-  }
-
-  void removeFromFavorites(String quoteId) {
-    setState(() {
-      favoriteQuotes.remove(quoteId);
-    });
-    saveFavorites();
-  }
-
-  bool isFavorite(String quoteId) {
-    return favoriteQuotes.contains(quoteId);
-  }
-
-  @override
   Widget build(BuildContext context) {
+    QuotesProvider quotesProvider = Provider.of<QuotesProvider>(context);
+    quotesProvider.getData();
+    quotesProvider.loadFavorites();
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -65,62 +20,30 @@ class _HomePageState extends State<HomePage> {
           end: Alignment.bottomCenter,
           colors: [
             Colors.pinkAccent.shade200.withOpacity(0.7),
-            Colors.deepPurple.shade300.withOpacity(0.8),
+            Colors.deepPurple.shade300.withOpacity(0.9),
           ],
         ),
       ),
       child: Scaffold(
-        backgroundColor: Colors.white.withOpacity(0.8),
+        backgroundColor: Colors.white.withOpacity(0.2),
         appBar: AppBar(
-          backgroundColor: Colors.transparent,
+          backgroundColor: Colors.amberAccent.withOpacity(0.1),
           title: const Text(
             "Quotes API",
             style: TextStyle(
               fontSize: 20,
+              color: Colors.black,
               fontWeight: FontWeight.bold,
               fontStyle: FontStyle.italic,
             ),
           ),
           centerTitle: true,
         ),
-        drawer: Drawer(
-          child: ListView(
-            children: [
-              UserAccountsDrawerHeader(
-                accountName: const Text('Avtar Profile'),
-                accountEmail: const Text(
-                  '+91 70965 84269',
-                  // style: TextStyle(color: Colors.grey),
-                ),
-                currentAccountPicture: CircleAvatar(
-                  child: ClipOval(
-                    child: Image.network(
-                        'https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png'),
-                  ),
-                ),
-                decoration: const BoxDecoration(
-                  color: Colors.blue,
-                  image: DecorationImage(
-                      fit: BoxFit.fill,
-                      image: NetworkImage(
-                          'https://oflutter.com/wp-content/uploads/2021/02/profile-bg3.jpg')),
-                ),
-              ),
-              ListTile(
-                onTap: () {
-                  Navigator.of(context).pushNamed('like_screen');
-                },
-                leading: const Icon(Icons.favorite_border),
-                title: const Text('Favorite'),
-              ),
-            ],
-          ),
-        ),
+        drawer: const CustomDrawer(),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              // Text('$favoriteQuotes'),
               Expanded(
                 flex: 10,
                 child: FutureBuilder(
@@ -186,14 +109,19 @@ class _HomePageState extends State<HomePage> {
                                               FloatingActionButton(
                                                 mini: true,
                                                 onPressed: () {
-                                                  if (isFavorite(e.id)) {
-                                                    removeFromFavorites(e.id);
+                                                  if (quotesProvider
+                                                      .isFavorite(e.id)) {
+                                                    quotesProvider
+                                                        .removeFromFavorites(
+                                                            e.id);
                                                   } else {
-                                                    addToFavorites(e.id);
+                                                    quotesProvider
+                                                        .addToFavorites(e.id);
                                                   }
                                                 },
                                                 child: Icon(
-                                                  isFavorite(e.id)
+                                                  quotesProvider
+                                                          .isFavorite(e.id)
                                                       ? Icons.favorite
                                                       : Icons.favorite_outline,
                                                 ),
