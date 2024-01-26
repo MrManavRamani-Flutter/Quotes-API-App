@@ -2,18 +2,18 @@
 
 quotes api application....
 
-### 1. All Quotes calling by API 
-### 2. Provider Using
-### 3. MVP Structure Flow
-### 4. Welcome Screen
-### 5. Home Screen [Display All Quotes]
-### 6. Drawer
-### 7. All Favorite Quotes Screen 
-### 8. Using Shared_Preferences
-### 9. Simple UI
-### 10. State management
-### 11. http use in this application
-### 12. some part added into components or widget structure wise
+#### 1. All Quotes calling by API 
+#### 2. Provider Using
+#### 3. MVP Structure Flow
+#### 4. Welcome Screen
+#### 5. Home Screen [Display All Quotes]
+#### 6. Drawer
+#### 7. All Favorite Quotes Screen 
+#### 8. Using Shared_Preferences
+#### 9. Simple UI
+#### 10. State management
+#### 11. http use in this application
+#### 12. some part added into components or widget structure wise
 
 ## Getting Started
 ## Video 
