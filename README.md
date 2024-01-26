@@ -2,7 +2,7 @@
     <tr>
       <td>
         <h2>Welcome Screen</h2>
-        <img src="https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/684ec57b-b59d-4ce0-bf9f-0c616f469a24">
+        <img src="https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/684ec57b-b59d-4ce0-bf9f-0c616f469a24" alt="Welcome Screen" width="100">
       </td>
     </tr>
     <tr>
