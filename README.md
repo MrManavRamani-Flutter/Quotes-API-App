@@ -25,7 +25,9 @@ https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/500c6e7
 ## All Screen photos given below
 ## 1 Welcome Screen
 
-![1](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/684ec57b-b59d-4ce0-bf9f-0c616f469a24  = 250x250)
+<img src="https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/684ec57b-b59d-4ce0-bf9f-0c616f469a24" width="48">
+
+![1](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/684ec57b-b59d-4ce0-bf9f-0c616f469a24)
 
 
 ## 2 Home Screen 
