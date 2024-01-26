@@ -6,26 +6,35 @@ quotes api application....
 ## Video 
 
 
-https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/b0191fba-650c-49c2-b271-68325dfba9a8
+https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/500c6e7d-2fb0-489e-b299-a440cbfeb5b7
 
 
 
 ## All Screen photos given below
 ## 1 Welcome Screen
 
-![WhatsApp Image 2024-01-25 at 18 39 11_ad80895c](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/4c0c5baf-0259-46d4-9956-43eb82dd5b93)
+![1](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/b4692f71-409d-4856-8ac6-e8672a82d80c)
+
 
 ## 2 Home Screen 
-![WhatsApp Image 2024-01-25 at 18 39 12_4782d5e4](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/b5414364-06b7-4229-b312-73fbd96d2f5c)
+
+![home](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/ed15fb3c-3ba9-47b0-ba90-6fabab437eb2)
+
 
 ## 3 Home screen in favorite functionality 
-![WhatsApp Image 2024-01-25 at 18 39 12_72586b80](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/038586dc-8e6c-4a2c-8aa1-93bdf3dbaa5f)
 
-## 4 Drawer In favorite page link
-![WhatsApp Image 2024-01-25 at 18 39 12_9c0fea8f](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/62e82237-1856-41f3-aa68-67e5634bed1a)
+![home__1](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/ed50b599-2799-4bef-bad4-b5b4fe5421b5)
+
+## 4 Drawer 
+
+![drawer](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/c5ecb630-e14d-4175-895e-fa30b4e1e146)
+
 
 ## 5 favorite Item List Screen 
-![WhatsApp Image 2024-01-25 at 18 39 13_eb04894c](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/470474ec-84df-4a2d-b26a-920e4f27c80c)
+
+![favorite](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/716bfaab-75b5-4b6f-bb56-d2c56cf3d90d)
+![favorite_1](https://github.com/MrManavRamani-Flutter/Quotes-API-App/assets/148671843/5094e3e9-797f-4b37-99d7-95555eb05df8)
+
 
 
 This project is a starting point for a Flutter application.
